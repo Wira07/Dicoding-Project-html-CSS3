@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kotak {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(163, 28, 28);
+            animation: kotak 1s;
+            margin: 30px auto;
+            transition: 1s;
+        }
+
+        @keyframes kotak {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .kotak:hover {
+            transform: rotate(720deg);
+            box-shadow: 0px 0px 5px 1px rgb(158, 28, 163);
+            border-radius: 50%;
+        }
+
+        .container {
+            width: 600px;
+            border: 5px solid black;
+            margin: 100px auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+        }
+
+        .bulat {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 1px;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kotak"></div>
+    <div class="container">
+        <div class="bulat">1</div>
+        <div class="bulat">2</div>
+        <div class="bulat">3</div>
+        <div class="bulat">4</div>
+        <div class="bulat">5</div>
+    </div>
+</body>
+
+</html>
